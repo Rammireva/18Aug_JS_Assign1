@@ -1,0 +1,19 @@
+<html>
+<head><title>Jquery</title></head>
+<body>
+<h1>ABC</h1>
+<div>
+    <h1>Div 1</h1>
+    <h1>Div 2</h1>
+</div>
+<h1>XYZ</h1>
+</body>
+<script src="../../jquery.min.js"></script>
+<script type="application/javascript">
+    $(document).ready(function(){
+        $('div').click(function(){
+            $(this).children('h1').css('background-color','red');
+        })
+    })
+</script>
+</html>
